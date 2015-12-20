@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[nathanryan]]></title>
+        <description><![CDATA[nathanryan]]></description>
+        <link>http://github.com/dylang/node-rss</link>
+        <generator>The Grid</generator>
+        <lastBuildDate>Sun, 20 Dec 2015 20:33:43 GMT</lastBuildDate>
+        <atom:link href="undefinedrss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Disneyland, the happiest place on Earth.]]></title>
+            <description><![CDATA[<article><h1>Disneyland, the happiest place on Earth.</h1><p>It was about a year ago that my family went to, The Happiest Place on Earth. I am a huge Disney fan, I want to be a season pass holder, I want to go as many times as possible in a year. I want to stay in the gorgeous hotels that are on the grounds. I want to go to see all the Disney Parks before I kick the bucket. </p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/4a613033d32ae29c7af1fb1fc18426f3e0fde6fb.jpg"></article>]]></description>
+            <link>undefineddisneyland-the-happiest-place-on-earth/index.html</link>
+            <guid isPermaLink="false">05a3305c-6702-4c44-a9d7-cbf5fb43fc4b</guid>
+            <pubDate>Sun, 20 Dec 2015 20:33:29 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
