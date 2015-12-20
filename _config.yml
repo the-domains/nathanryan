@@ -1,6 +1,6 @@
 name: nathanryan
 favicon: null
-layout_spectrum: 0.07492896355688572
+layout_spectrum: 1
 typography_spectrum: 0.23339
 cta:
   domain: null
@@ -16,11 +16,11 @@ opengraph:
   appId: null
 color:
   brandColors:
-    - '#9D2D3C'
-    - '#DDE4DD'
-    - '#BCAB47'
-    - '#6B574B'
-    - '#160600'
+    - '#242f45'
+    - '#ffffff'
+    - '#030200'
+    - '#5b5f6a'
+    - '#a1978d'
   brandStrength: 0.6051588533446193
   lightness: 0.8847700587939471
   saturation: 0.49099101638421416
