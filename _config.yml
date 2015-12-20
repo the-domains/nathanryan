@@ -1,0 +1,28 @@
+name: nathanryan
+favicon: null
+layout_spectrum: 0.07492896355688572
+typography_spectrum: 0.03445505537092686
+cta:
+  domain: null
+  bucket: null
+  version: null
+analytics:
+  google: null
+  facebook: null
+  twitter: null
+opengraph:
+  image: null
+  type: null
+  appId: null
+color:
+  brandColors:
+    - '#9D2D3C'
+    - '#DDE4DD'
+    - '#BCAB47'
+    - '#6B574B'
+    - '#160600'
+  brandStrength: 0.6051588533446193
+  lightness: 0.8847700587939471
+  saturation: 0.49099101638421416
+  rhythmicContrast: 0.9617950459942222
+purpose: []
