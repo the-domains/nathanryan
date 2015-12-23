@@ -2,14 +2,21 @@
     <channel>
         <title><![CDATA[nathanryan]]></title>
         <description><![CDATA[nathanryan]]></description>
-        <link>http://github.com/dylang/node-rss</link>
+        <link>https://thegrid.ai/nathanryan/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Sun, 20 Dec 2015 20:33:43 GMT</lastBuildDate>
-        <atom:link href="undefinedrss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Wed, 23 Dec 2015 01:10:22 GMT</lastBuildDate>
+        <atom:link href="https://thegrid.ai/nathanryan/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[New Year, New Beginnings... A  Cliché ]]></title>
+            <description><![CDATA[<article><h1>New Year, New Beginnings... A  Cliché </h1><p>It's a New Start to the New Year</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/a33790ca68f55bacef2090298fb442bfb685d109.jpg"></article>]]></description>
+            <link>https://thegrid.ai/nathanryan/new-year-new-beginnings-a-cliche/index.html</link>
+            <guid isPermaLink="false">4d0da1de-0ae4-4340-91c4-400bf573f9a0</guid>
+            <pubDate>Wed, 23 Dec 2015 01:10:02 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Disneyland, the happiest place on Earth.]]></title>
             <description><![CDATA[<article><h1>Disneyland, the happiest place on Earth.</h1><p>It was about a year ago that my family went to, The Happiest Place on Earth. I am a huge Disney fan, I want to be a season pass holder, I want to go as many times as possible in a year. I want to stay in the gorgeous hotels that are on the grounds. I want to go to see all the Disney Parks before I kick the bucket. </p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/4a613033d32ae29c7af1fb1fc18426f3e0fde6fb.jpg"></article>]]></description>
-            <link>undefineddisneyland-the-happiest-place-on-earth/index.html</link>
+            <link>https://thegrid.ai/nathanryan/disneyland-the-happiest-place-on-earth/index.html</link>
             <guid isPermaLink="false">05a3305c-6702-4c44-a9d7-cbf5fb43fc4b</guid>
             <pubDate>Sun, 20 Dec 2015 20:33:29 GMT</pubDate>
         </item>
