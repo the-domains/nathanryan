@@ -1,6 +1,6 @@
 name: nathanryan
 favicon: null
-layout_spectrum: 1
+layout_spectrum: 0.75454
 typography_spectrum: 0.23339
 title: This is Everything
 cta:
@@ -22,7 +22,7 @@ color:
     - '#030200'
     - '#5b5f6a'
     - '#a1978d'
-  brandStrength: 0.1875
+  brandStrength: 0.0625
   lightness: 0.8847700587939471
   saturation: 0.49099101638421416
   rhythmicContrast: 0.9617950459942222
