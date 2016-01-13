@@ -1,4 +1,4 @@
-<!DOCTYPE HTML><html class="exporting wf-loading"><head><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/><title>nathanryan</title><link href="../rss.xml" title="This is Everything feed" rel="alternate" type="application/rss+xml"/><meta name="generator" content="The Grid taylor/0.16.25"><meta name="the-grid-solution" content="5e2d12f1-8336-47df-8d4e-f256cad2b318"><style href="./css/scale/mini.css" media="(max-width: 19.9376em)" rel="stylesheet">@media (max-width: 15.625em){html{font-size:3.09375em !important}}
+<!DOCTYPE HTML><html class="exporting wf-loading"><head><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/><title>nathanryan</title><link href="../rss.xml" title="This is Everything feed" rel="alternate" type="application/rss+xml"/><meta name="generator" content="The Grid taylor/0.17.3"><meta name="the-grid-solution" content="d1cfbbd1-e7a7-48c9-b7bb-2a3758d40422"><style href="./css/scale/mini.css" media="(max-width: 19.9376em)" rel="stylesheet">@media (max-width: 15.625em){html{font-size:3.09375em !important}}
 @media (min-width: 15.6875em)and (max-width: 15.75em){	html{font-size:3.28125em !important}}
 @media (min-width: 15.8125em)and (max-width: 16.25em){	html{font-size:3.375em !important}}
 @media (min-width: 16.3125em)and (max-width: 16.6875em){html{font-size:3.46875em !important}}
@@ -202,6 +202,14 @@ body {
 }
 .stack {
   z-index: 1;
+  transition: transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+}
+.group,
+.aside,
+.decoration {
+  transition: transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
 }
 picture {
   display: inline-block;
@@ -250,6 +258,9 @@ a:active {
   transition: color 0.1s ease-in, background-color 0.1s ease-out;
   -webkit-transition: color 0.1s ease-in, background-color 0.1s ease-out;
 }
+a.aside {
+  display: inline-block;
+}
 html.exporting a {
   transition: none;
 }
@@ -259,11 +270,21 @@ html.exporting a {
 .media > a {
   display: inline-block;
 }
+.media iframe {
+  transition: 0.3s opacity ease-in;
+  -webkit-transition: 0.3s opacity ease-in;
+}
 h1 a,
 h2 a,
 h3 a {
   font-weight: inherit;
   letter-spacing: inherit;
+}
+a {
+  -webkit-box-decoration-break: clone;
+  -ms-box-decoration-break: clone;
+  -moz-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .text-decoration {
   -webkit-box-decoration-break: clone;
@@ -277,36 +298,50 @@ h3 a {
   margin-left: 1.5em;
 }
 .decoration {
-  position: relative;
   pointer-events: none;
+}
+.svg {
+  position: relative;
   background-color: currentColor;
 }
-.decoration > svg {
+.svg > svg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.decoration.connector > svg {
+.svg.connector > svg {
   width: 109%;
   height: 109%;
   margin-left: -2%;
 }
-.decoration path,
-.decoration ellipse,
-.decoration rect,
-.decoration polygon,
-.decoration circle {
+.svg path,
+.svg ellipse,
+.svg rect,
+.svg polygon,
+.svg circle {
   fill: currentColor;
 }
-.decoration mpath,
-.decoration line,
-.decoration polyline {
+.svg mpath,
+.svg line,
+.svg polyline {
   stroke: currentColor;
 }
-.svg.decoration {
+.svg {
   background-color: transparent;
+}
+.revealed .play.svg:after {
+  display: block;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-top: -20px;
+  margin-left: -20px;
+  background-color: currentColor;
+  content: "";
 }
 .colors-style-aside-border .publisher,
 .colors-style-aside-border .author {
@@ -1089,7 +1124,7 @@ wbr.w1800{ display: block }
  #u-14109bb8-f99e-4f19-b235-a38e682848b7-desktop-l-one-3 {
 display: none;
 }
-}</style></head><body><div class="layout-system rust mobile" id="page-14109bb8-f99e-4f19-b235-a38e682848b7"><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-mobile-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-mobile-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_paragraph w_text w_long_paragraph w_long_text w_medium_paragraph w_medium_text layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-mobile-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-mobile-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-mobile-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-mobile-l-one-3-l-one"></div><style id="u-14109bb8-f99e-4f19-b235-a38e682848b7-color">body{background-color: rgba(32, 34, 38, 1)}</style></section><article subject="panel" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_center uninverted vertical collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_small panel stack heading i first_panel last_panel w_headline w_title w_decoration w_short_headline w_short_title stack heading" itemid="u-page-nav" itemtype="nav" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-nav"><div kind="group" index="heading" class="group heading group heading" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-nav-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-nav-g-heading-t-headline"><a class="text-decoration" href="../index.html" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-nav-g-heading-t-headline-a">This is Everything</a></h1></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_large chapter stack column i first_chapter w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="b9b0f867-ee75-4957-942a-33cd9d74aabd" itemtype="text" diff_index="1" index="column" kind="stack" score="2.625" missed="0.375" tag="article" id="u-b9b0f867-ee75-4957-942a-33cd9d74aabd"><div kind="group" index="column" class="group column group column" id="u-b9b0f867-ee75-4957-942a-33cd9d74aabd-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-b9b0f867-ee75-4957-942a-33cd9d74aabd-g-column-t-paragraph"><p><span class="first-letter">F</span>ear..</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>W</span>hy am I afraid? Does this fear have a reason, or is <wbr class="w480 w960"></wbr>this fear created because of <wbr class="w481 w961 w1799"></wbr>the unknown <wbr class="w1800"></wbr>circumstances <wbr class="w480 w960"></wbr>of the foreseeable future?</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>I</span> have recently learned that I am a flight risk. Fight <wbr class="w480 w960"></wbr>or flight, I'm going to <wbr class="w481 w961 w1799"></wbr>fly away so fast it <wbr class="w1800"></wbr>would make <wbr class="w480 w960"></wbr>your head spin. Since learning that I'm a flier, I <wbr class="w480 w481 w960 w961 w1799"></wbr>have decided, consciously, that I will <wbr class="w1800"></wbr>face fear head <wbr class="w480 w960"></wbr>on. I will face any fear <wbr class="w481 w961 w1799"></wbr>that doesn't put me into <wbr class="w480 w960"></wbr>physical danger of course.</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>I</span> recently accepted a new job offer in the start of <wbr class="w480 w960"></wbr>the new year that's looming <wbr class="w481 w961 w1799"></wbr>around the corner. I <wbr class="w1800"></wbr>was <wbr class="w480 w960"></wbr>going to turn it down at first because of fear. I was <wbr class="w480 w481 w960 w961 w1799"></wbr>afraid of failing, the commute, the <wbr class="w1800"></wbr>corporate-ness of <wbr class="w480 w960"></wbr>it all, and that frightened <wbr class="w481 w961 w1799"></wbr>me to death. It was time <wbr class="w480 w960"></wbr>to ask myself why. Why did all <wbr class="w1800"></wbr>of this scare me? I <wbr class="w480 w481 w960 w961 w1799"></wbr>literally had to stop myself and ask the question. <wbr class="w480 w960"></wbr>What was the point of going <wbr class="w481 w961 w1799 w1800"></wbr>through the arduous <wbr class="w480 w960"></wbr>interview process to turn down something I thought I <wbr class="w480 w960"></wbr>had <wbr class="w481 w961 w1799"></wbr>wanted?</p></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="060d1bf0-d83c-4d8f-abc9-3a01151a5f45" itemtype="text" diff_index="1" index="column" kind="stack" score="2.625" missed="0.375" tag="article" id="u-060d1bf0-d83c-4d8f-abc9-3a01151a5f45"><div kind="group" index="column" class="group column group column" id="u-060d1bf0-d83c-4d8f-abc9-3a01151a5f45-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-060d1bf0-d83c-4d8f-abc9-3a01151a5f45-g-column-t-paragraph"><p><span class="first-letter">W</span>ithin those questions I found the answer. There was <wbr class="w480 w960"></wbr>nothing to be afraid of!! If <wbr class="w481 w961 w1799"></wbr>I didn't accept the <wbr class="w1800"></wbr>job <wbr class="w480 w960"></wbr>for fear of failure, I already failed. If I didn't <wbr class="w480 w960"></wbr>accept <wbr class="w481 w961 w1799"></wbr>the job because the commute was too <wbr class="w1800"></wbr>much, I <wbr class="w480 w960"></wbr>can't really consider myself a <wbr class="w481 w961 w1799"></wbr>dweller of the silicon <wbr class="w480 w960"></wbr>valley; after-all, the normal commute <wbr class="w1800"></wbr>is an hour-ish <wbr class="w480 w481 w960 w961 w1799"></wbr>anyway. If I didn't accept the job because I didn't <wbr class="w480 w960"></wbr>feel like I belonged there, <wbr class="w481 w961 w1799"></wbr>they <wbr class="w1800"></wbr>wouldn't have offered <wbr class="w480 w960"></wbr>a me a position anyways. Life is throwing me an <wbr class="w480 w481 w960 w961 w1799"></wbr>awesome bone and I seriously <wbr class="w1800"></wbr>debated not taking it! I <wbr class="w480 w960"></wbr>had been running from Life <wbr class="w481 w961 w1799"></wbr>and the opportunities to be <wbr class="w480 w960"></wbr>great at something. </p></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="e4ef59e2-be38-404f-aaa2-ee5d1ba2c457" itemtype="text" diff_index="1" index="column" kind="stack" score="2.625" missed="0.375" tag="article" id="u-e4ef59e2-be38-404f-aaa2-ee5d1ba2c457"><div kind="group" index="column" class="group column group column" id="u-e4ef59e2-be38-404f-aaa2-ee5d1ba2c457-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-e4ef59e2-be38-404f-aaa2-ee5d1ba2c457-g-column-t-paragraph"><p><span class="first-letter">E</span>verything that happens, I believe, happens for a <wbr class="w480 w960"></wbr>reason. I was offered a <wbr class="w481 w961 w1799"></wbr>position with this great <wbr class="w480 w960 w1800"></wbr>company because I have something they desire within <wbr class="w480 w481 w960 w961 w1799"></wbr>their system. It might not be my talents at <wbr class="w1800"></wbr>selling, I <wbr class="w480 w960"></wbr>certainly doubt it. It <wbr class="w481 w961 w1799"></wbr>might not be my fantastic <wbr class="w480 w960"></wbr>fashion-sense, it wouldn't because it's a <wbr class="w1800"></wbr>tech <wbr class="w480 w960"></wbr>company. <wbr class="w481 w961 w1799"></wbr>It certainly isn't because I am silver-<wbr class="w480 w960"></wbr>tongued, although I do wish I could talk <wbr class="w481 w961 w1799"></wbr>my way <wbr class="w1800"></wbr>in and <wbr class="w480 w960"></wbr>out of things. My honest opinion of why I was hired is <wbr class="w480 w960"></wbr>because of <wbr class="w481 w961 w1799"></wbr>my personality, my drive to <wbr class="w1800"></wbr>be more than I <wbr class="w480 w960"></wbr>am, and my positive outlook on <wbr class="w481 w961 w1799"></wbr>situations and life.</p></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="2dfc2feb-665b-4a55-a7aa-f48848bbb6cc" itemtype="text" diff_index="1" index="column" kind="stack" score="2.625" missed="0.375" tag="article" id="u-2dfc2feb-665b-4a55-a7aa-f48848bbb6cc"><div kind="group" index="column" class="group column group column" id="u-2dfc2feb-665b-4a55-a7aa-f48848bbb6cc-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-2dfc2feb-665b-4a55-a7aa-f48848bbb6cc-g-column-t-paragraph"><p><span class="first-letter">I</span> have told many associates and new-hires before that <wbr class="w480 w960"></wbr>I can teach them how to <wbr class="w481 w961 w1799"></wbr>fold a shirt and use a <wbr class="w1800"></wbr>cash <wbr class="w480 w960"></wbr>register but I cannot teach them how to be nice and <wbr class="w480 w481 w960 w961 w1799"></wbr>charismatic. If I hired people based on <wbr class="w1800"></wbr>skill alone, <wbr class="w480 w960"></wbr>my stores would have been <wbr class="w481 w961 w1799"></wbr>forever understaffed. We can <wbr class="w480 w960"></wbr>learn skills that are taught, we <wbr class="w1800"></wbr>can do everything <wbr class="w481 w961 w1799"></wbr>we <wbr class="w480 w960"></wbr>are told to become great. We cannot be something we <wbr class="w480 w960"></wbr>are unwilling to work <wbr class="w481 w961 w1799 w1800"></wbr>towards. I was a very depressed <wbr class="w480 w960"></wbr>person when I was in high school. My mother <wbr class="w481 w961 w1799"></wbr>literally <wbr class="w480 w960"></wbr>called me a <wbr class="w1800"></wbr>worry wart. I say now, that I didn't have <wbr class="w480 w960"></wbr>anything to worry <wbr class="w481 w961 w1799"></wbr>about, but I did. Struggling with <wbr class="w480 w960"></wbr>your <wbr class="w1800"></wbr>identity in high school is always a big <wbr class="w481 w961 w1799"></wbr>deal, but <wbr class="w480 w960"></wbr>we can get into it later. </p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>I</span> say I didn't have anything to worry about because I <wbr class="w480 w960"></wbr>was provided for, I had <wbr class="w481 w961 w1799"></wbr>want for nothing. But I <wbr class="w1800"></wbr>did <wbr class="w480 w960"></wbr>get to a point in my depression where I said, "This <wbr class="w481 w961 w1799"></wbr>is <wbr class="w480 w960"></wbr>stupid, why do I feel so bad for myself? <wbr class="w1800"></wbr>No one else <wbr class="w480 w960"></wbr>feels bad for me. Get <wbr class="w481 w961 w1799"></wbr>over it and become an awesome, <wbr class="w480 w960"></wbr>fun, and happy person. You matter!!"</p></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i last_chapter w_paragraph w_text w_medium_paragraph w_medium_text stack column" itemid="d94470b0-745b-46fd-9014-148d8faab821" itemtype="text" diff_index="1" index="column" kind="stack" score="2.625" missed="0.375" tag="article" id="u-d94470b0-745b-46fd-9014-148d8faab821"><div kind="group" index="column" class="group column group column" id="u-d94470b0-745b-46fd-9014-148d8faab821-g-column"><div kind="text" index="paragraph" class="text-decoration medium medium_paragraph medium_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-d94470b0-745b-46fd-9014-148d8faab821-g-column-t-paragraph"><p><span class="first-letter">I</span>t took a few years, but I won. It comes and it goes, <wbr class="w480 w960"></wbr>but ultimately I have <wbr class="w481 w961 w1799"></wbr>become so much more than <wbr class="w1800"></wbr>I was, <wbr class="w480 w960"></wbr>and this new opportunity is going to take me even <wbr class="w480 w481 w960 w961 w1799"></wbr>farther. I am quite thrilled. Who knows <wbr class="w1800"></wbr>where I will <wbr class="w480 w960"></wbr>end up in the next few <wbr class="w481 w961 w1799"></wbr>years!!!!</p></div></div></article><article subject="panel" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_center uninverted vertical collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_small panel stack heading i first_panel last_panel w_headline w_title w_decoration w_short_headline w_short_title stack heading" itemid="u-page-alternate" itemtype="alternate" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-alternate"><div kind="group" index="heading" class="group heading group heading" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-alternate-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-alternate-g-heading-t-headline"><a class="text-decoration" href="../rss.xml" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-alternate-g-heading-t-headline-a">This is Everything feed</a></h1></div></article><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-desktop-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-desktop-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_paragraph w_text w_long_paragraph w_long_text w_medium_paragraph w_medium_text layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-desktop-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-desktop-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-desktop-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-desktop-l-one-3-l-one"></div><style id="u-14109bb8-f99e-4f19-b235-a38e682848b7-color">body{background-color: rgba(32, 34, 38, 1)}</style></section><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-cinema-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-cinema-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_paragraph w_text w_long_paragraph w_long_text w_medium_paragraph w_medium_text layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-cinema-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-cinema-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-cinema-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-cinema-l-one-3-l-one"></div><style id="u-14109bb8-f99e-4f19-b235-a38e682848b7-color">body{background-color: rgba(32, 34, 38, 1)}</style></section></div><script href="./client.js">(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+}</style></head><body><div class="layout-system rust mobile" id="page-14109bb8-f99e-4f19-b235-a38e682848b7"><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-mobile-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-mobile-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_paragraph w_text w_long_paragraph w_long_text w_medium_paragraph w_medium_text layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-mobile-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-mobile-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-mobile-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-mobile-l-one-3-l-one"></div><style id="u-14109bb8-f99e-4f19-b235-a38e682848b7-color">body{background-color: rgba(32, 34, 38, 1)}</style></section><article subject="panel" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_center uninverted vertical collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_small panel stack heading i first_panel last_panel w_headline w_title w_decoration w_short_headline w_short_title stack heading" itemid="u-page-nav" itemtype="nav" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-nav"><div kind="group" index="heading" class="group heading group heading" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-nav-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-nav-g-heading-t-headline"><a class="text-decoration" href="../index.html" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-nav-g-heading-t-headline-a">This is Everything</a></h1></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_large chapter stack column i first_chapter w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="b9b0f867-ee75-4957-942a-33cd9d74aabd" itemtype="text" diff_index="1" index="column" kind="stack" score="0.625" missed="0.375" tag="article" id="u-b9b0f867-ee75-4957-942a-33cd9d74aabd"><div kind="group" index="column" class="group column group column" id="u-b9b0f867-ee75-4957-942a-33cd9d74aabd-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-b9b0f867-ee75-4957-942a-33cd9d74aabd-g-column-t-paragraph"><p><span class="first-letter">F</span>ear..</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>W</span>hy am I afraid? Does this fear have a reason, or is <wbr class="w480 w960"></wbr>this fear created because of <wbr class="w481 w961 w1799"></wbr>the unknown <wbr class="w1800"></wbr>circumstances <wbr class="w480 w960"></wbr>of the foreseeable future?</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>I</span> have recently learned that I am a flight risk. Fight <wbr class="w480 w960"></wbr>or flight, I'm going to <wbr class="w481 w961 w1799"></wbr>fly away so fast it <wbr class="w1800"></wbr>would make <wbr class="w480 w960"></wbr>your head spin. Since learning that I'm a flier, I <wbr class="w480 w481 w960 w961 w1799"></wbr>have decided, consciously, that I will <wbr class="w1800"></wbr>face fear head <wbr class="w480 w960"></wbr>on. I will face any fear <wbr class="w481 w961 w1799"></wbr>that doesn't put me into <wbr class="w480 w960"></wbr>physical danger of course.</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>I</span> recently accepted a new job offer in the start of <wbr class="w480 w960"></wbr>the new year that's looming <wbr class="w481 w961 w1799"></wbr>around the corner. I <wbr class="w1800"></wbr>was <wbr class="w480 w960"></wbr>going to turn it down at first because of fear. I was <wbr class="w480 w481 w960 w961 w1799"></wbr>afraid of failing, the commute, the <wbr class="w1800"></wbr>corporate-ness of <wbr class="w480 w960"></wbr>it all, and that frightened <wbr class="w481 w961 w1799"></wbr>me to death. It was time <wbr class="w480 w960"></wbr>to ask myself why. Why did all <wbr class="w1800"></wbr>of this scare me? I <wbr class="w480 w481 w960 w961 w1799"></wbr>literally had to stop myself and ask the question. <wbr class="w480 w960"></wbr>What was the point of going <wbr class="w481 w961 w1799 w1800"></wbr>through the arduous <wbr class="w480 w960"></wbr>interview process to turn down something I thought I <wbr class="w480 w960"></wbr>had <wbr class="w481 w961 w1799"></wbr>wanted?</p></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="060d1bf0-d83c-4d8f-abc9-3a01151a5f45" itemtype="text" diff_index="1" index="column" kind="stack" score="0.625" missed="0.375" tag="article" id="u-060d1bf0-d83c-4d8f-abc9-3a01151a5f45"><div kind="group" index="column" class="group column group column" id="u-060d1bf0-d83c-4d8f-abc9-3a01151a5f45-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-060d1bf0-d83c-4d8f-abc9-3a01151a5f45-g-column-t-paragraph"><p><span class="first-letter">W</span>ithin those questions I found the answer. There was <wbr class="w480 w960"></wbr>nothing to be afraid of!! If <wbr class="w481 w961 w1799"></wbr>I didn't accept the <wbr class="w1800"></wbr>job <wbr class="w480 w960"></wbr>for fear of failure, I already failed. If I didn't <wbr class="w480 w960"></wbr>accept <wbr class="w481 w961 w1799"></wbr>the job because the commute was too <wbr class="w1800"></wbr>much, I <wbr class="w480 w960"></wbr>can't really consider myself a <wbr class="w481 w961 w1799"></wbr>dweller of the silicon <wbr class="w480 w960"></wbr>valley; after-all, the normal commute <wbr class="w1800"></wbr>is an hour-ish <wbr class="w480 w481 w960 w961 w1799"></wbr>anyway. If I didn't accept the job because I didn't <wbr class="w480 w960"></wbr>feel like I belonged there, <wbr class="w481 w961 w1799"></wbr>they <wbr class="w1800"></wbr>wouldn't have offered <wbr class="w480 w960"></wbr>a me a position anyways. Life is throwing me an <wbr class="w480 w481 w960 w961 w1799"></wbr>awesome bone and I seriously <wbr class="w1800"></wbr>debated not taking it! I <wbr class="w480 w960"></wbr>had been running from Life <wbr class="w481 w961 w1799"></wbr>and the opportunities to be <wbr class="w480 w960"></wbr>great at something. </p></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="e4ef59e2-be38-404f-aaa2-ee5d1ba2c457" itemtype="text" diff_index="1" index="column" kind="stack" score="0.625" missed="0.375" tag="article" id="u-e4ef59e2-be38-404f-aaa2-ee5d1ba2c457"><div kind="group" index="column" class="group column group column" id="u-e4ef59e2-be38-404f-aaa2-ee5d1ba2c457-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-e4ef59e2-be38-404f-aaa2-ee5d1ba2c457-g-column-t-paragraph"><p><span class="first-letter">E</span>verything that happens, I believe, happens for a <wbr class="w480 w960"></wbr>reason. I was offered a <wbr class="w481 w961 w1799"></wbr>position with this great <wbr class="w480 w960 w1800"></wbr>company because I have something they desire within <wbr class="w480 w481 w960 w961 w1799"></wbr>their system. It might not be my talents at <wbr class="w1800"></wbr>selling, I <wbr class="w480 w960"></wbr>certainly doubt it. It <wbr class="w481 w961 w1799"></wbr>might not be my fantastic <wbr class="w480 w960"></wbr>fashion-sense, it wouldn't because it's a <wbr class="w1800"></wbr>tech <wbr class="w480 w960"></wbr>company. <wbr class="w481 w961 w1799"></wbr>It certainly isn't because I am silver-<wbr class="w480 w960"></wbr>tongued, although I do wish I could talk <wbr class="w481 w961 w1799"></wbr>my way <wbr class="w1800"></wbr>in and <wbr class="w480 w960"></wbr>out of things. My honest opinion of why I was hired is <wbr class="w480 w960"></wbr>because of <wbr class="w481 w961 w1799"></wbr>my personality, my drive to <wbr class="w1800"></wbr>be more than I <wbr class="w480 w960"></wbr>am, and my positive outlook on <wbr class="w481 w961 w1799"></wbr>situations and life.</p></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="2dfc2feb-665b-4a55-a7aa-f48848bbb6cc" itemtype="text" diff_index="1" index="column" kind="stack" score="0.625" missed="0.375" tag="article" id="u-2dfc2feb-665b-4a55-a7aa-f48848bbb6cc"><div kind="group" index="column" class="group column group column" id="u-2dfc2feb-665b-4a55-a7aa-f48848bbb6cc-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-2dfc2feb-665b-4a55-a7aa-f48848bbb6cc-g-column-t-paragraph"><p><span class="first-letter">I</span> have told many associates and new-hires before that <wbr class="w480 w960"></wbr>I can teach them how to <wbr class="w481 w961 w1799"></wbr>fold a shirt and use a <wbr class="w1800"></wbr>cash <wbr class="w480 w960"></wbr>register but I cannot teach them how to be nice and <wbr class="w480 w481 w960 w961 w1799"></wbr>charismatic. If I hired people based on <wbr class="w1800"></wbr>skill alone, <wbr class="w480 w960"></wbr>my stores would have been <wbr class="w481 w961 w1799"></wbr>forever understaffed. We can <wbr class="w480 w960"></wbr>learn skills that are taught, we <wbr class="w1800"></wbr>can do everything <wbr class="w481 w961 w1799"></wbr>we <wbr class="w480 w960"></wbr>are told to become great. We cannot be something we <wbr class="w480 w960"></wbr>are unwilling to work <wbr class="w481 w961 w1799 w1800"></wbr>towards. I was a very depressed <wbr class="w480 w960"></wbr>person when I was in high school. My mother <wbr class="w481 w961 w1799"></wbr>literally <wbr class="w480 w960"></wbr>called me a <wbr class="w1800"></wbr>worry wart. I say now, that I didn't have <wbr class="w480 w960"></wbr>anything to worry <wbr class="w481 w961 w1799"></wbr>about, but I did. Struggling with <wbr class="w480 w960"></wbr>your <wbr class="w1800"></wbr>identity in high school is always a big <wbr class="w481 w961 w1799"></wbr>deal, but <wbr class="w480 w960"></wbr>we can get into it later. </p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>I</span> say I didn't have anything to worry about because I <wbr class="w480 w960"></wbr>was provided for, I had <wbr class="w481 w961 w1799"></wbr>want for nothing. But I <wbr class="w1800"></wbr>did <wbr class="w480 w960"></wbr>get to a point in my depression where I said, "This <wbr class="w481 w961 w1799"></wbr>is <wbr class="w480 w960"></wbr>stupid, why do I feel so bad for myself? <wbr class="w1800"></wbr>No one else <wbr class="w480 w960"></wbr>feels bad for me. Get <wbr class="w481 w961 w1799"></wbr>over it and become an awesome, <wbr class="w480 w960"></wbr>fun, and happy person. You matter!!"</p></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i last_chapter w_paragraph w_text w_medium_paragraph w_medium_text stack column" itemid="d94470b0-745b-46fd-9014-148d8faab821" itemtype="text" diff_index="1" index="column" kind="stack" score="0.625" missed="0.375" tag="article" id="u-d94470b0-745b-46fd-9014-148d8faab821"><div kind="group" index="column" class="group column group column" id="u-d94470b0-745b-46fd-9014-148d8faab821-g-column"><div kind="text" index="paragraph" class="text-decoration medium medium_paragraph medium_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-d94470b0-745b-46fd-9014-148d8faab821-g-column-t-paragraph"><p><span class="first-letter">I</span>t took a few years, but I won. It comes and it goes, <wbr class="w480 w960"></wbr>but ultimately I have <wbr class="w481 w961 w1799"></wbr>become so much more than <wbr class="w1800"></wbr>I was, <wbr class="w480 w960"></wbr>and this new opportunity is going to take me even <wbr class="w480 w481 w960 w961 w1799"></wbr>farther. I am quite thrilled. Who knows <wbr class="w1800"></wbr>where I will <wbr class="w480 w960"></wbr>end up in the next few <wbr class="w481 w961 w1799"></wbr>years!!!!</p></div></div></article><article subject="panel" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_center uninverted vertical collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_small panel stack heading i first_panel last_panel w_headline w_title w_decoration w_short_headline w_short_title stack heading" itemid="u-page-alternate" itemtype="alternate" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-alternate"><div kind="group" index="heading" class="group heading group heading" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-alternate-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-alternate-g-heading-t-headline"><a class="text-decoration" href="../rss.xml" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-alternate-g-heading-t-headline-a">This is Everything feed</a></h1></div></article><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-desktop-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-desktop-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_paragraph w_text w_long_paragraph w_long_text w_medium_paragraph w_medium_text layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-desktop-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-desktop-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-desktop-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-desktop-l-one-3-l-one"></div><style id="u-14109bb8-f99e-4f19-b235-a38e682848b7-color">body{background-color: rgba(32, 34, 38, 1)}</style></section><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-cinema-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-cinema-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_paragraph w_text w_long_paragraph w_long_text w_medium_paragraph w_medium_text layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-cinema-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-cinema-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-cinema-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-14109bb8-f99e-4f19-b235-a38e682848b7-cinema-l-one-3-l-one"></div><style id="u-14109bb8-f99e-4f19-b235-a38e682848b7-color">body{background-color: rgba(32, 34, 38, 1)}</style></section></div><script href="./client.js">(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 /*! Hammer.JS - v1.1.3 - 2014-05-20
  * http://eightmedia.github.io/hammer.js
  *
@@ -1616,9 +1651,11 @@ global.Hamburger = require('./hamburger');
 
 global.Highlighter = require('./highlighter');
 
+global.Player = require('./player');
+
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./animator":3,"./hamburger":4,"./highlighter":5,"./paginator":7,"hammerjs/hammer.min.js":1,"picturefill/dist/picturefill.min.js":2}],7:[function(require,module,exports){
+},{"./animator":3,"./hamburger":4,"./highlighter":5,"./paginator":7,"./player":8,"hammerjs/hammer.min.js":1,"picturefill/dist/picturefill.min.js":2}],7:[function(require,module,exports){
 var appendPage, mainpage, page, ref, ref1, urls;
 
 page = require('./reflow');
@@ -1719,7 +1756,192 @@ module.exports = function() {
 };
 
 
-},{"./reflow":8}],8:[function(require,module,exports){
+},{"./reflow":9}],8:[function(require,module,exports){
+var Player, Youtube, iframe, revealed, rgb2hex;
+
+iframe = null;
+
+Youtube = null;
+
+Player = function(id, src, width, height, color, bg) {
+  if (src.indexOf('youtube') > -1) {
+    src += '&color=white&theme=light&modestbranding=1';
+  }
+  src = src.replace('COLOR', color).replace('BG', bg);
+  if (location.protocol !== 'https:') {
+    src = src.replace('https:', 'http:');
+  }
+  iframe = document.createElement('iframe');
+  iframe.id = id;
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.src = src;
+  iframe.width = width;
+  iframe.height = height;
+  iframe.style.width = '100%';
+  iframe.style.height = '100%';
+  iframe.style.left = 0;
+  iframe.style.right = 0;
+  iframe.style.position = 'absolute';
+  iframe.style.opacity = 0.2;
+  iframe.onload = function() {
+    return iframe.style.opacity = 1;
+  };
+  return iframe;
+};
+
+revealed = null;
+
+Player.reveal = function(iframe) {
+  var diff, i, left, len, parent, play, ref, ref1, sibling, target, top, translateX, translateY;
+  while (target = (target || iframe).parentNode) {
+    if ((ref = target.classList) != null ? ref.contains('media') : void 0) {
+      if (target.parentNode.classList.contains('group')) {
+        parent = target.parentNode;
+      } else {
+        parent = target;
+      }
+      revealed = iframe;
+      play = parent.getElementsByClassName('play')[0];
+      left = target.offsetWidth - play.offsetLeft - play.offsetWidth;
+      top = -play.offsetTop;
+      play.style.webkitTransformOrigin = 'top right';
+      play.style.webkitTransform = 'translateX(' + left + 'px) translateY(' + top + 'px) scale(0.5)';
+      target.classList.add('revealed');
+      ref1 = parent.parentNode.childNodes;
+      for (i = 0, len = ref1.length; i < len; i++) {
+        sibling = ref1[i];
+        if (sibling.nodeType === 1 && sibling !== parent) {
+          translateX = translateY = null;
+          if ((diff = sibling.offsetLeft + sibling.offsetWidth - parent.offsetLeft) > 2 && parent.offsetLeft >= sibling.offsetLeft) {
+            translateX = -diff;
+          }
+          if ((diff = target.offsetLeft + target.offsetWidth - sibling.offsetLeft) > 2 && parent.offsetLeft <= sibling.offsetLeft) {
+            if (!translateX || Math.abs(diff) < Math.abs(translateX)) {
+              translateX = diff;
+            }
+          }
+          if ((diff = sibling.offsetTop + sibling.offsetHeight - parent.offsetTop) > 2 && parent.offsetTop >= sibling.offsetTop) {
+            translateY = -diff;
+          }
+          if ((diff = target.offsetTop + target.offsetHeight - sibling.offsetTop) > 2 && parent.offsetTop <= sibling.offsetTop) {
+            if (!translateY || Math.abs(diff) < Math.abs(translateY)) {
+              translateY = diff;
+            }
+          }
+          if (Math.abs(translateX) > Math.abs(translateY)) {
+            sibling.style.webkitTransform = 'translateY(' + translateY + 'px)';
+          } else {
+            sibling.style.webkitTransform = 'translateX(' + translateX + 'px)';
+          }
+          console.log(translateX, translateY, sibling);
+        }
+      }
+    }
+  }
+};
+
+Player.hide = function(iframe) {
+  var i, len, parent, play, ref, ref1, sibling;
+  while (parent = (parent || iframe).parentNode) {
+    if ((ref = parent.classList) != null ? ref.contains('revealed') : void 0) {
+      parent.classList.remove('revealed');
+      if (parent.parentNode.classList.contains('group')) {
+        parent = parent.parentNode;
+      }
+      play = parent.getElementsByClassName('play')[0];
+      play.style.webkitTransform = '';
+      ref1 = parent.parentNode.childNodes;
+      for (i = 0, len = ref1.length; i < len; i++) {
+        sibling = ref1[i];
+        sibling.style.webkitTransform = '';
+      }
+    }
+  }
+  return revealed = null;
+};
+
+window.addEventListener('resize', function() {
+  return setTimeout(function() {
+    return requestAnimationFrame(function() {
+      if (revealed) {
+        if (revealed.offsetWidth) {
+          return Player.reveal(revealed);
+        } else {
+          return Player.stop(revealed);
+        }
+      }
+    });
+  }, 10);
+});
+
+Player.stop = function(iframe) {
+  var old;
+  old = iframe;
+  iframe.style.opacity = 0;
+  setTimeout(function() {
+    var ref;
+    return (ref = old.parentNode) != null ? ref.removeChild(old) : void 0;
+  }, 300);
+  Player.hide(iframe);
+  return iframe = null;
+};
+
+document.addEventListener('click', function(e) {
+  var bg, color, header, parent, play, ref, ref1, results, styles, target;
+  target = e.target;
+  results = [];
+  while (target) {
+    if ((ref = target.classList) != null ? ref.contains('media') : void 0) {
+      if (play = target.getElementsByClassName('play')[0]) {
+        if ((iframe != null ? iframe.parentNode : void 0) === target) {
+          Player.stop(iframe);
+        } else {
+          if (iframe) {
+            Player.stop(iframe);
+          }
+          color = bg = null;
+          header = (ref1 = target.parentNode.parentNode.getElementsByClassName('title')[0]) != null ? ref1.firstChild : void 0;
+          parent = header || play;
+          while (parent) {
+            if (parent.nodeType === 1) {
+              styles = window.getComputedStyle(parent);
+              if (styles.color.indexOf('rgba') === -1 || !styles.color.match(/,\s*0\)/)) {
+                if (color == null) {
+                  color = styles.color;
+                }
+              }
+              if (styles['background-color'].indexOf('rgba') === -1 || !styles['background-color'].match(/,\s*0\)/)) {
+                if (bg == null) {
+                  bg = styles['background-color'];
+                }
+              }
+            }
+            parent = parent.parentNode;
+          }
+          iframe = Player(play.id + '-player', play.getAttribute('data-src'), play.getAttribute('data-width'), play.getAttribute('data-height'), rgb2hex(color), rgb2hex(bg));
+          target.appendChild(iframe);
+          Player.reveal(iframe);
+        }
+        e.preventDefault();
+        break;
+      }
+    }
+    results.push(target = target.parentNode);
+  }
+  return results;
+});
+
+rgb2hex = function(rgb) {
+  rgb = rgb.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
+  if (rgb && rgb.length === 4) {
+    return ("0" + parseInt(rgb[1], 10).toString(16)).slice(-2) + ("0" + parseInt(rgb[2], 10).toString(16)).slice(-2) + ("0" + parseInt(rgb[3], 10).toString(16)).slice(-2);
+  }
+};
+
+window.exports = window.Player = Player;
+
+
+},{}],9:[function(require,module,exports){
 module.exports = {
   reflow: function(container) {
     var counter, heights, hidden, hole, holed, holes, i, id, ids, index, j, k, l, last, layout, layouts, len, len1, len2, len3, m, mutations, name, node, ref, ref1, ref2, stack, stacks;
@@ -1984,7 +2206,7 @@ module.exports = function(callback) {
   } else {
     protocol = '';
   }
-  url = protocol + "//cdn.thegrid.io/gss/gss-document/1.2.4/gss.document.parser.js";
+  url = protocol + "//cdn.thegrid.io/gss/gss-document/1.2.8/gss.document.parser.js";
   if (location.toString().indexOf('//localhost:8080') > -1) {
     return module.exports.load(protocol + "//localhost:8080/node_modules/gss-document/dist/gss.document.parser.js", callback, function() {
       return module.exports.load(url, callback);
